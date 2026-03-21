@@ -3,3 +3,17 @@
 frontend/node_modules
 frontend/dist
 frontend/.env
+
+# backend
+
+backend/.env
+backend/pycache
+backend/__pycache__
+backend/.venv
+backend/venv
+backend/env
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/uploads
+backend/processed
