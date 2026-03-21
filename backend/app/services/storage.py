@@ -1,9 +1,10 @@
 import os
 from pathlib import Path
 from uuid import uuid4
-from dotenv import load_dotenv
 
+from dotenv import load_dotenv
 from supabase import Client, create_client
+
 
 load_dotenv()
 
