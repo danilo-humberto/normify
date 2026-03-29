@@ -4,3 +4,7 @@ python-multipart
 python-docx
 supabase
 python-dotenv
+pydantic
+pydantic-settings
+google-genai
+lxml

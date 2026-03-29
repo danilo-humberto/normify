@@ -1,14 +1,18 @@
-class PipelineError(Exception):
-    """Erro base da pipeline de documentos."""
+class NormifyError(Exception):
+    """Base error for all Normify exceptions."""
 
 
-class InvalidFileTypeError(PipelineError):
-    """Arquivo com extensao nao suportada."""
+class InvalidFileTypeError(NormifyError):
+    """Raised when the uploaded file is not a .docx."""
 
 
-class ProcessingError(PipelineError):
-    """Falha ao ler ou formatar o arquivo."""
+class ProcessingError(NormifyError):
+    """Raised when document processing fails."""
 
 
-class StorageError(PipelineError):
-    """Falha ao enviar o arquivo para o storage."""
+class StorageError(NormifyError):
+    """Raised when Supabase upload fails."""
+
+
+class ReferencesError(NormifyError):
+    """Raised when reference formatting fails."""
